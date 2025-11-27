@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index Search Engine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>☁️ City Air Quality Index Search</h1>
+    </header>
+
+    <main>
+        <form id="search-form">
+            <input type="text" id="city-input" placeholder="Enter City Name (e.g., Delhi)" required>
+            <button type="submit">Search AQI</button>
+        </form>
+
+        <div id="message" class="hidden"></div>
+
+        <div id="results-container" class="hidden">
+            <h2>Air Quality for <span id="city-name-display"></span></h2>
+
+            <div id="aqi-card" class="aqi-card">
+                <p>Overall AQI:</p>
+                <div id="aqi-value">--</div>
+            </div>
+
+            <div id="pollutants-detail">
+                <h3>Key Pollutants:</h3>
+            </div>
+
+            <p class="timestamp">Last updated: <span id="last-updated">--</span></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
